@@ -7,7 +7,7 @@ services:
       - "8049:8049/tcp"
     environment:
       SP_BIND: ":8049"
-      SP_WORKERS: "20"
+      SP_WORKERS: "50"
       SP_TIMEOUT: "10s"
       SP_USERAGENT: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36"
     ulimits:
