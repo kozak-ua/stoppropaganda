@@ -27,7 +27,7 @@ docker rm stoppropaganda
 docker pull erikmnkl/stoppropaganda
 
 # run it again
-docker run --name stoppropaganda -d --ulimit nofile=128000:128000 -p "8049:8049/tcp" erikmnkl/stoppropaganda
+docker run --name stoppropaganda -d --ulimit nofile=128000:128000 -p "8049:8049/tcp" kozak-ua/stoppropaganda
 ```
 
 Use environment variables to change settings (for example `--env SP_WORKERS=50`) to change configuration. Available environment variables (and their defaults):
