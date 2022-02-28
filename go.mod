@@ -1,4 +1,4 @@
-module github.com/erkexzcx/stoppropaganda
+module github.com/kozak-ua/stoppropaganda
 
 go 1.17
 
