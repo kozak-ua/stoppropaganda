@@ -1,6 +1,6 @@
 services:
   stoppropaganda:
-    image: erikmnkl/stoppropaganda
+    image: kozak-ua/stoppropaganda
     container_name: stoppropaganda
     restart: unless-stopped
     ports:
