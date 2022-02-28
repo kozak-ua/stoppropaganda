@@ -17,14 +17,14 @@ Some foreign media and even countries (e.g. Belarus) publicitly support Russian 
 
 Easiest way is to use Docker:
 ```bash
-docker run --name stoppropaganda -d --ulimit nofile=128000:128000 -p "8049:8049/tcp" erikmnkl/stoppropaganda
+docker run --name stoppropaganda -d --ulimit nofile=128000:128000 -p "8049:8049/tcp" kozak-ua/stoppropaganda
 ```
 
 Update to latest version
 ```bash
 docker kill stoppropaganda
 docker rm stoppropaganda
-docker pull erikmnkl/stoppropaganda
+docker pull kozak-ua/stoppropaganda
 
 # run it again
 docker run --name stoppropaganda -d --ulimit nofile=128000:128000 -p "8049:8049/tcp" kozak-ua/stoppropaganda
@@ -42,7 +42,7 @@ You can also use `docker-compose`:
 ```yaml
 services:
   stoppropaganda:
-    image: erikmnkl/stoppropaganda
+    image: kozak-ua/stoppropaganda
     container_name: stoppropaganda
     restart: unless-stopped
     ports:
@@ -64,7 +64,7 @@ Then you can see status in this URL: `http://<ip>:8049/status`
 
 ## Binaries
 
-Download binary from [releases](https://github.com/erkexzcx/stoppropaganda/releases/).
+Download binary from [releases](https://github.com/kozak-ua/stoppropaganda/releases/).
 
 Use from terminal:
 
@@ -114,7 +114,7 @@ go version go1.17.7 linux/amd64
 
 Download this repo:
 ```bash
-git clone https://github.com/erkexzcx/stoppropaganda.git
+git clone https://github.com/kozak-ua/stoppropaganda.git
 cd stoppropaganda
 ```
 
